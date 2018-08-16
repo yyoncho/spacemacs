@@ -72,6 +72,7 @@ This layer adds support for the Java language.
 - Support for the following backends:
   - [[https://github.com/mopemope/meghanada-emacs][Meghanada]] client/server (default),
   - [[http://eclim.org][Eclim]] client/server,
+  - [[https://ensime.github.io/][ENSIME]] client/server.
   - [[https://github.com/emacs-lsp/lsp-java][LSP Java]] client/server.
 - Each provides:
   - Auto-completion using company
@@ -554,30 +555,31 @@ to lack of classpath information.
 
 ** LSP Java
 
-| Key Binding   | Description                  |
-|---------------+------------------------------|
-| ~SPC m g g~   | Go to definition             |
-| ~SPC m g r~   | Find references              |
-| ~SPC m g R~   | Peek references              |
-| ~SPC m g t~   | Open type definition         |
-| ~SPC m g T~   | Peek type definition         |
-| ~SPC m h h~   | Describe thing at point      |
-| ~SPC m e l~   | List project errors/warnings |
-| ~SPC m p u~   | Update user settings         |
-| ~SPC m e a~   | Execute code action          |
-| ~SPC m q r~   | Restart workspace            |
-| ~SPC m r o i~ | Organize imports             |
-| ~SPC m r r s~ | Rename symbol                |
-| ~SPC m r a i~ | Add import                   |
-| ~SPC m r a m~ | Add unimplemented methods    |
-| ~SPC m r c p~ | Create parameter             |
-| ~SPC m r c f~ | Create field                 |
-| ~SPC m r e c~ | Extract constant             |
-| ~SPC m r e l~ | Extract local                |
-| ~SPC m r e m~ | Extract method               |
-| ~SPC m c c~   | Build project                |
-| ~SPC m a n~   | Actionable notifications     |
-| ~SPC m =~     | Format code                  |
+| Key Binding   | Description                    |
+|---------------+--------------------------------|
+| ~SPC m g g~   | Go to definition               |
+| ~SPC m g r~   | Find references                |
+| ~SPC m g R~   | Peek references using ~lsp-ui~ |
+| ~SPC m g t~   | Goto type definition           |
+| ~SPC m g a~   | Open type                      |
+| ~SPC m g A~   | Peek type using ~lsp-ui~       |
+| ~SPC m h h~   | Describe thing at point        |
+| ~SPC m e l~   | List project errors/warnings   |
+| ~SPC m p u~   | Update user settings           |
+| ~SPC m e a~   | Execute code action            |
+| ~SPC m q r~   | Restart workspace              |
+| ~SPC m r o i~ | Organize imports               |
+| ~SPC m r r~   | Rename symbol                  |
+| ~SPC m r a i~ | Add import                     |
+| ~SPC m r a m~ | Add unimplemented methods      |
+| ~SPC m r c p~ | Create parameter               |
+| ~SPC m r c f~ | Create field                   |
+| ~SPC m r e c~ | Extract constant               |
+| ~SPC m r e l~ | Extract local                  |
+| ~SPC m r e m~ | Extract method                 |
+| ~SPC m c c~   | Build project                  |
+| ~SPC m a n~   | Actionable notifications       |
+| ~SPC m =~     | Format code                    |
 
 ** Maven
 

@@ -15,7 +15,7 @@
 
 (defvar java-backend 'meghanada
   "The backend to use for IDE features. Possible values are `eclim', `ensime',
- `meghanada', and `lsp'.")
+ `meghanada' and `lsp'.")
 
 (defvar java--ensime-modes '(java-mode)
   "Modes using ensime. Mainly used to define ENSIME key bindings.")

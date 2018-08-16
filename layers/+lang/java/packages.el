@@ -29,10 +29,7 @@
         maven-test-mode
         (meghanada :toggle (not (version< emacs-version "25.1")))
         mvn
-        lsp-mode
         lsp-java
-        lsp-ui
-        company-lsp
         org
         ))
 
@@ -449,20 +446,22 @@
       ;; key bindings
       (dolist (prefix '(("mc" . "compile")
                         ("mg" . "goto")
-                        ("mr" . "refactor")))
+                        ("mr" . "refactor")
+                        ("mq" . "lsp")))
       (spacemacs/set-leader-keys-for-major-mode 'java-mode
         "gg"  'xref-find-definitions
         "gr"  'xref-find-references
         "gR"  'lsp-ui-peek-find-references
-        "gt"  'xref-find-apropos
-        "gT"  'lsp-ui-peek-find-workspace-symbol
+        "ga"  'xref-find-apropos
+        "gA"  'lsp-ui-peek-find-workspace-symbol
+        "gd"  'lsp-goto-type-definition
         "hh"  'lsp-describe-thing-at-point
         "el"  'lsp-ui-flycheck-list
         "pu"  'lsp-java-update-user-settings
         "ea"  'lsp-execute-code-action
         "qr"  'lsp-restart-workspace
         "roi" 'lsp-java-organize-imports
-        "rrs" 'lsp-rename
+        "rr" 'lsp-rename
         "rai" 'lsp-java-add-import
         "ram" 'lsp-java-add-unimplemented-methods
         "rcp" 'lsp-java-create-parameter
