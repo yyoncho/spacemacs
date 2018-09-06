@@ -29,7 +29,7 @@
         maven-test-mode
         (meghanada :toggle (not (version< emacs-version "25.1")))
         mvn
-        (lsp-java :requires lsp-mode lsp-ui company-lsp)
+        (lsp-java :requires lsp-mode lsp-ui company-lsp dap-mode)
         org
         ))
 
@@ -462,7 +462,12 @@
         "rem" 'lsp-java-extract-method
         "cc"  'lsp-java-build-project
         "an"  'lsp-java-actionable-notifications
-        "="   'lsp-format-buffer)
+        "="   'lsp-format-buffer
+
+        ;; dap-mode
+        "xj"   'dap-java-debug
+        "tt"   'dap-java-debug-test-method
+        "tc"   'dap-java-debug-test-class)
 
       (setq lsp-highlight-symbol-at-point nil
             lsp-ui-sideline-update-mode 'point
