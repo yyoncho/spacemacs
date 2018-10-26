@@ -56,7 +56,7 @@
     "dbh" #'dap-breakpoint-hit-condition
     "dba" #'dap-breakpoint-add
     "dbd" #'dap-breakpoint-delete
-    "dB"  #'dap-breakpoint-delete-all
+    "dbD"  #'dap-breakpoint-delete-all
     ;; repl
     "d'"  #'dap-ui-repl
     ;; windows

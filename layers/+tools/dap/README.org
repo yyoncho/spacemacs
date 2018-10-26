@@ -88,7 +88,7 @@
     | ~m d b h~   | change breakpoint hit count     |
     | ~m d b a~   | add a breakpoint                |
     | ~m d b d~   | delete a breakpoint             |
-    | ~m d B~     | clear all breakpoints           |
+    | ~m d b D~   | clear all breakpoints           |
     |-------------+---------------------------------|
     | ~m d '~     | Run debug REPL                  |
     |-------------+---------------------------------|
