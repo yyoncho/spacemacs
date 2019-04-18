@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+#name : mm
+#key : mm
+#contributor : Ivan Yonchovski
+# --
+mocks.replay();
+$0
+mocks.verify();

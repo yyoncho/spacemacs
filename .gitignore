@@ -55,35 +55,12 @@ eclipse.jdt.ls
 .dap-breakpoints
 .lsp-session-*
 .trello
-.extension
-mspyls/
-transient/
-bbdb
 
-# Private directory
-private/
-!private/README.md
-!private/snippets/README.md
-!private/templates/README.md
-!private/local/README.md
 /games/
 /doc/COMMUNITY.org
 /doc/CONTRIBUTING.org
-
-# Ignore tags created by etags, ctags, gtags (GNU global) and cscope
-# source: https://github.com/github/gitignore/blob/master/Global/Tags.gitignore
-TAGS
-.TAGS
-!TAGS/
-tags
-.tags
-!tags/
-gtags.files
-GTAGS
-GRTAGS
-GPATH
-GSYMS
-cscope.files
-cscope.out
-cscope.in.out
-cscope.po.out
+/.persistent-scratch
+/.lsp-session
+/.dap-breakpoints
+/.lsp-session-v1
+/dired-history

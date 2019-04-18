@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : href
+#key : href
+#contributor : Ivan Yonchovski
+# --
+<a href="${1:`(first kill-ring)`}">${0}</href>

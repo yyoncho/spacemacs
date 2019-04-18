@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : ldd
+#key : ldd
+#contributor : Ivan Yonchovski
+# --
+(timbre/debug $0)

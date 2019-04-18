@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : jsc
+#key : jsc
+#contributor : Ivan Yonchovski
+# --
+(.log js/console $0)

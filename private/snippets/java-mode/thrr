@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : thrr
+#key : thrr
+#contributor : Ivan Yonchovski
+# --
+throw new RuntimeException("$0");

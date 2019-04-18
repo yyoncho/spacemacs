@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : lg
+#key : lg
+#contributor : Ivan Yonchovski
+# --
+private static final Logger logger = LoggerFactory.getLogger(`(file-name-base (or (buffer-file-name) (buffer-name)))`.class);

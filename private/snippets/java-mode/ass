@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : ass
+#key : ass
+#contributor : Ivan Yonchovski
+# --
+assertEquals($1, $2);$0

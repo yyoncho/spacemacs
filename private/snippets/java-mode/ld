@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+#name : ld
+#key : ld
+#contributor : Ivan Yonchovski
+# --
+logger.debug("$0");
