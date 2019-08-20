@@ -8,6 +8,7 @@
 - [[#layer-installation][Layer installation]]
 - [[#configuration][Configuration]]
   - [[#derived-layers][Derived layers]]
+  - [[#variables][Variables]]
     - [[#declared-prefixes][Declared prefixes]]
     - [[#default-key-bindings][Default key bindings]]
 - [[#references][References]]
@@ -32,7 +33,6 @@ Fully featured IDE-like debugger providing:
 - Evaluating statements
 - Debug/Run configurations
 - Debug REPL
-
 * Layer installation
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
 add =dap= to the existing =dotspacemacs-configuration-layers= list in this
@@ -46,6 +46,10 @@ application, debug test, etc). The package declares function
 ~spacemacs/dap-bind-keys-for-mode~ which should be used by the derived layers
 to configure the shortcuts.
 
+** Variables
+| Variable name              | Default | Description                  |
+|----------------------------+---------+------------------------------|
+| =dap-enable-mouse-support= | t       | Enable/disable mouse support |
 *** Declared prefixes
 The following prefixes have been declared:
 
