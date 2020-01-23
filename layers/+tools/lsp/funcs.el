@@ -34,46 +34,49 @@
      (spacemacs//lsp-bind-simple-navigation-functions "g")
      (spacemacs//lsp-bind-peek-navigation-functions "G")))
 
-  (spacemacs/set-leader-keys-for-minor-mode 'lsp-mode
-    ;; format
-    "=b" #'lsp-format-buffer
-    "=r" #'lsp-format-region
-    "=o" #'lsp-organize-imports
-    ;; code actions
-    "aa" #'lsp-execute-code-action
-    "af" #'spacemacs//lsp-action-placeholder
-    "ar" #'spacemacs//lsp-action-placeholder
-    "as" #'spacemacs//lsp-action-placeholder
-    ;; goto
-    ;; N.B. implementation and references covered by xref bindings / lsp provider...
-    "gt" #'lsp-find-type-definition
-    "gk" #'spacemacs/lsp-avy-goto-word
-    "gK" #'spacemacs/lsp-avy-goto-symbol
-    "gM" #'lsp-ui-imenu
-    ;; help
-    "hh" #'lsp-describe-thing-at-point
-    ;; jump
-    ;; backend
-    "bd" #'lsp-describe-session
-    "br" #'lsp-workspace-restart
-    "bs" #'lsp-workspace-shutdown
-    ;; refactor
-    "rr" #'lsp-rename
-    ;; toggles
-    "Td" #'lsp-ui-doc-mode
-    "Ts" #'lsp-ui-sideline-mode
-    "TF" #'spacemacs/lsp-ui-doc-func
-    "TS" #'spacemacs/lsp-ui-sideline-symb
-    "TI" #'spacemacs/lsp-ui-sideline-ignore-duplicate
-    "Tl" #'lsp-lens-mode
-    ;; folders
-    "Fs" #'lsp-workspace-folders-switch
-    "Fr" #'lsp-workspace-folders-remove
-    "Fa" #'lsp-workspace-folders-add
-    ;; text/code
-    "xh" #'lsp-document-highlight
-    "xl" #'lsp-lens-show
-    "xL" #'lsp-lens-hide))
+  (spacemacs//init-leader-mode-map 'lsp-mode 'lsp-command-map t)
+  ;; 'lsp-mode
+  ;; "" lsp-command-map
+  ;; ;; format
+  ;; "=b" #'lsp-format-buffer
+  ;; "=r" #'lsp-format-region
+  ;; "=o" #'lsp-organize-imports
+  ;; ;; code actions
+  ;; "aa" #'lsp-execute-code-action
+  ;; "af" #'spacemacs//lsp-action-placeholder
+  ;; "ar" #'spacemacs//lsp-action-placeholder
+  ;; "as" #'spacemacs//lsp-action-placeholder
+  ;; ;; goto
+  ;; ;; N.B. implementation and references covered by xref bindings / lsp provider...
+  ;; "gt" #'lsp-find-type-definition
+  ;; "gk" #'spacemacs/lsp-avy-goto-word
+  ;; "gK" #'spacemacs/lsp-avy-goto-symbol
+  ;; "gM" #'lsp-ui-imenu
+  ;; ;; help
+  ;; "hh" #'lsp-describe-thing-at-point
+  ;; ;; jump
+  ;; ;; backend
+  ;; "bd" #'lsp-describe-session
+  ;; "br" #'lsp-workspace-restart
+  ;; "bs" #'lsp-workspace-shutdown
+  ;; ;; refactor
+  ;; "rr" #'lsp-rename
+  ;; ;; toggles
+  ;; "Td" #'lsp-ui-doc-mode
+  ;; "Ts" #'lsp-ui-sideline-mode
+  ;; "TF" #'spacemacs/lsp-ui-doc-func
+  ;; "TS" #'spacemacs/lsp-ui-sideline-symb
+  ;; "TI" #'spacemacs/lsp-ui-sideline-ignore-duplicate
+  ;; "Tl" #'lsp-lens-mode
+  ;; ;; folders
+  ;; "Fs" #'lsp-workspace-folders-switch
+  ;; "Fr" #'lsp-workspace-folders-remove
+  ;; "Fa" #'lsp-workspace-folders-add
+  ;; ;; text/code
+  ;; "xh" #'lsp-document-highlight
+  ;; "xl" #'lsp-lens-show
+  ;; "xL" #'lsp-lens-hide
+  )
 
 (defun spacemacs//lsp-bind-simple-navigation-functions (prefix-char)
   (spacemacs/set-leader-keys-for-minor-mode 'lsp-mode
